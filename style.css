@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.result {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.highlight {
+    color: #e53e3e;
+    font-weight: bold;
+}
