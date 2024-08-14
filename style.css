@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     color: #333;
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -13,6 +14,7 @@ body {
     font-weight: bold;
     margin: 20px 0;
 }
+
 .highlight {
     color: #e53e3e;
     font-weight: bold;
