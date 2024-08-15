@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("theme-toggle");
-  const currentTheme = localStorage.getItem("theme") || "dark";
+  const currentTheme = localStorage.getItem("theme") || "light";
 
   if (currentTheme === "light") {
     document.body.classList.add("light-mode");
