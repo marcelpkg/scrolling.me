@@ -3,35 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Go, Phone</title>
+    <title>scrolling.me</title>
     <link rel="stylesheet" href="style.css" />
     <script src="scripts.js" defer></script>
+
+    <meta content="scrolling.me" property="og:title" />
+    <meta
+      content="a reminder of how screen time affects your lifespan"
+      property="og:description"
+    />
+    <meta content="https://scrolling.me" property="og:url" />
   </head>
   <body>
-    <main class="container">
+    <div class="container">
       <header>
-        <h1>Go, Phone</h1>
+        <h1 class="main-title">scrolling.me</h1>
+        <p>a reminder of how screen time impacts your life</p>
       </header>
 
       <section>
         <h2>Calculate Your Screen Time's Impact</h2>
         <label for="screenTime"
-          >Enter your average weekly screen time (in hours):</label
+          >Enter your daily average screen time (in hours):</label
         >
         <input
           type="number"
           id="screenTime"
-          class="screentime"
           min="0"
           max="24"
           step="0.1"
-          aria-label="Average weekly screen time in hours"
+          aria-label="Daily average screen time in hours"
         />
-        <button class="calculate" id="calculateButton">Calculate</button>
-        <p>
-          To work out your average weekly Screen Time do daily / 7 and your
-          output will be the average.
-        </p>
+        <button id="calculateButton">Calculate</button>
+
         <div id="result" class="result"></div>
       </section>
 
@@ -51,13 +55,13 @@
         </p>
         <p class="highlight">
           So please, reflect on your screen time. Reclaim your time and your
-          life.
+          life, think about who you've lost time with, is it worth it?
         </p>
       </section>
 
       <footer>
         <p>Made by <a href="https://x.com/@marcelpkg">@marcelpkg</a></p>
       </footer>
-    </main>
+    </div>
   </body>
 </html>
