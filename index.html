@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>scrolling.me</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="scripts.js" defer></script>
+    <meta content="scrolling.me" property="og:title" />
+    <meta
+      content="a reminder of how screen time affects your lifespan"
+      property="og:description"
+    />
+    <meta content="https://scrolling.me" property="og:url" />
+  </head>
+  <body>
+    <button id="theme-toggle" aria-label="Toggle Theme">
+      <i class="fas fa-sun"></i>
+    </button>
+    <div class="container">
+      <header>
+        <h1 class="main-title">scrolling.me</h1>
+        <p>a reminder of how screen time impacts your life</p>
+      </header>
 
-    <meta content="scrolling.me" property="og:title">
-    <meta content="a reminder of how screen time affects your lifespan" property="og:description">
-    <meta content="https://scrolling.me" property="og:url">
- </head>
-    <body>
-        <div class="container">
-            <h1 style="line-height: 2px">scrolling.me</h1>
-            <p>a reminder of how screen time impacts your life</p>
+      <section>
+        <h2>Calculate Your Screen Time's Impact</h2>
+        <label for="screenTime"
+          >Enter your daily average screen time (in hours):</label
+        >
+        <input
+          type="number"
+          id="screenTime"
+          min="0"
+          max="24"
+          step="0.1"
+          aria-label="Daily average screen time in hours"
+        />
+        <button id="calculateButton">Calculate</button>
 
-            <div>
-                <h2>Calculate Your Screen Time's Impact</h2>
-                <label for="screenTime">Enter your daily average screen time (in hours):</label>
-                <input type="number" id="screenTime" min="0" max="24" step="0.1">
-                <button onclick="calculateTime()">Calculate</button>
+        <div id="result" class="result"></div>
+      </section>
 
-                <div id="result" class="result"></div>
-            </div>
-
-            <div>
-                <h2>Why I Created This Website</h2>
-                <p>
-                    During a recent holiday with my friends, I noticed something different. We were spending significantly less time together than last holiday because many of them were constantly on apps like TikTok, doom-scrolling through content.
-                </p>
-                <p>
-                    These holidays won't last forever, and I want to make the most of our time together. Unfortunately, apps designed to capture our attention have taken away precious moments of real connection and shared experiences.
-                </p>
-                <p class="highlight">
-                    So please, reflect on your screen time. Reclaim your time and your life, think about who you've lost time with, is it worth it?
-                </p>
-            </div>
-
-            <div>
-                <p>Made by <a href="https://x.com/@marcelpkg">@marcelpkg</a></p>
-            </div>
-        </div>
-    </body>
+      <section>
+        <h2>Why I Created This Website</h2>
+        <p>
+          During a recent holiday with my friends, I noticed something
+          different. We were spending significantly less time together than last
+          holiday because many of them were constantly on apps like TikTok,
+          doom-scrolling through content.
+        </p>
+        <p>
+          These holidays won't last forever, and I want to make the most of our
+          time together. Unfortunately, apps designed to capture our attention
+          have taken away precious moments of real connection and shared
+          experiences.
+        </p>
+        <p class="highlight">
+          So please, reflect on your screen time. Reclaim your time and your
+          life, think about who you've lost time with, is it worth it?
+        </p>
+      </section>
+    </div>
+  </body>
 </html>

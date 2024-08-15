@@ -1,21 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #131516;
+  color: #d8d4cf;
+}
+
+.main-title {
+  line-height: 2px;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
+
+.result,
+.highlight {
+  font-weight: bold;
+}
+
 .result {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 20px 0;
+  font-size: 1.2em;
+  margin: 20px 0;
 }
 
 .highlight {
-    color: #e53e3e;
-    font-weight: bold;
+  color: #e53e3e;
+}
+
+.screentime,
+.calculate {
+  background-color: #131516;
+  color: #d8d4cf;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .highlight {
+  color: #ff0000;
+}
+
+body.light-mode .screentime,
+body.light-mode .calculate {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#theme-toggle {
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+#theme-toggle .fa-moon {
+  color: #131516; /* Moon icon color for dark mode */
+}
+
+#theme-toggle .fa-sun {
+  color: #ffffff; /* Sun icon color for light mode */
+}
+
+body.light-mode #theme-toggle .fa-moon {
+  color: #000000; /* Moon icon color for light mode */
+}
+
+body.light-mode #theme-toggle .fa-sun {
+  color: #ffffff; /* Sun icon color for light mode */
 }
