@@ -4,9 +4,11 @@ body {
   background-color: #131516;
   color: #d8d4cf;
 }
+
 .main-title {
   line-height: 2px;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -31,4 +33,43 @@ body {
 .calculate {
   background-color: #131516;
   color: #d8d4cf;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .highlight {
+  color: #ff0000;
+}
+
+body.light-mode .screentime,
+body.light-mode .calculate {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#theme-toggle {
+  padding: 10px 20px;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+#theme-toggle .fa-moon {
+  color: #131516; /* Moon icon color for dark mode */
+}
+
+#theme-toggle .fa-sun {
+  color: #ffffff; /* Sun icon color for light mode */
+}
+
+body.light-mode #theme-toggle .fa-moon {
+  color: #000000; /* Moon icon color for light mode */
+}
+
+body.light-mode #theme-toggle .fa-sun {
+  color: #ffffff; /* Sun icon color for light mode */
 }

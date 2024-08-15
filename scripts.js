@@ -42,3 +42,27 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("theme-toggle");
+  const currentTheme = localStorage.getItem("theme") || "dark";
+
+  if (currentTheme === "light") {
+    document.body.classList.add("light-mode");
+    toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    const theme = document.body.classList.contains("light-mode")
+      ? "light"
+      : "dark";
+    localStorage.setItem("theme", theme);
+    toggleButton.innerHTML =
+      theme === "light"
+        ? '<i class="fas fa-moon"></i>'
+        : '<i class="fas fa-sun"></i>';
+  });
+});
